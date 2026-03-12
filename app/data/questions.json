@@ -1,0 +1,1118 @@
+[
+  {
+    "id": "course-1",
+    "title": "COS101: Computer Input Devices",
+    "icon": "\ud83d\udcd8",
+    "description": "Fundamental concepts of computer input devices and how they interact with computer systems.",
+    "topics": [
+      {
+        "id": "topic-1-1",
+        "title": "Introduction to Input Devices",
+        "description": "Basic concepts, functions, and examples of computer input devices.",
+        "difficulty": "Beginner",
+        "questions": [
+          {
+            "question": "An input device is primarily used to:",
+            "options": [
+              "Display information",
+              "Enter data into the computer",
+              "Store programs",
+              "Print documents"
+            ],
+            "answer": 1,
+            "explanation": "Input devices allow users to enter data and instructions into a computer system."
+          },
+          {
+            "question": "Which of the following is an example of an input device?",
+            "options": [
+              "Keyboard",
+              "Monitor",
+              "Printer",
+              "Speaker"
+            ],
+            "answer": 0,
+            "explanation": "A keyboard is used to input text and commands into the computer."
+          },
+          {
+            "question": "Which device is commonly used to type text into a computer?",
+            "options": [
+              "Mouse",
+              "Keyboard",
+              "Scanner",
+              "Microphone"
+            ],
+            "answer": 1,
+            "explanation": "The keyboard allows users to type letters, numbers, and symbols."
+          },
+          {
+            "question": "Which of the following is NOT an input device?",
+            "options": [
+              "Mouse",
+              "Scanner",
+              "Printer",
+              "Microphone"
+            ],
+            "answer": 2,
+            "explanation": "A printer is an output device because it produces printed documents."
+          },
+          {
+            "question": "Which device captures sound as input?",
+            "options": [
+              "Speaker",
+              "Microphone",
+              "Monitor",
+              "Projector"
+            ],
+            "answer": 1,
+            "explanation": "A microphone converts sound waves into electrical signals for the computer."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          },
+          {
+            "question": "Which input device is mainly used to control the cursor on the screen?",
+            "options": [
+              "Mouse",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The mouse is an input device used to control the cursor on the screen."
+          },
+          {
+            "question": "Which input device is mainly used to convert paper documents into digital images?",
+            "options": [
+              "Scanner",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The scanner is an input device used to convert paper documents into digital images."
+          },
+          {
+            "question": "Which input device is mainly used to capture images and video input?",
+            "options": [
+              "Webcam",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The webcam is an input device used to capture images and video input."
+          },
+          {
+            "question": "Which input device is mainly used to allow users to interact directly with the display?",
+            "options": [
+              "Touchscreen",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The touchscreen is an input device used to allow users to interact directly with the display."
+          },
+          {
+            "question": "Which input device is mainly used to control movement in games and simulations?",
+            "options": [
+              "Joystick",
+              "Printer",
+              "Speaker",
+              "Monitor"
+            ],
+            "answer": 0,
+            "explanation": "The joystick is an input device used to control movement in games and simulations."
+          }
+        ]
+      }
+    ]
+  }
+]
