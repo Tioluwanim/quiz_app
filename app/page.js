@@ -52,7 +52,6 @@ export default function Page() {
               Live
             </span>
           </div>
-
           {screen !== "home" && (
             <button className="btn-secondary" onClick={() => setScreen("home")} style={{ fontSize: "0.72rem", padding: "7px 14px" }}>
               ⌂ Home
@@ -73,7 +72,7 @@ export default function Page() {
         width: "100%", maxWidth: 780,
         marginTop: "auto", paddingTop: "3rem",
       }}>
-        {/* Peach-to-teal divider */}
+        {/* Peach-to-teal gradient divider */}
         <div style={{
           height: 1, marginBottom: "1.5rem",
           background: "linear-gradient(90deg, transparent, var(--peach), var(--teal), transparent)",
@@ -81,13 +80,14 @@ export default function Page() {
         }} />
 
         <div style={{
-          display: "flex", alignItems: "center",
+          display: "flex", alignItems: "flex-start",
           justifyContent: "space-between", flexWrap: "wrap",
           gap: "1.25rem", paddingBottom: "2rem",
         }}>
 
-          {/* Left — brand + copyright */}
-          <div>
+          {/* Left — brand + copyright + promo */}
+          <div style={{ maxWidth: 280 }}>
+            {/* Logo row */}
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: "0.35rem" }}>
               <span style={{ fontFamily: "'Playfair Display',serif", fontWeight: 800, fontSize: "1rem", color: "var(--text)" }}>
                 Quiz<span style={{ color: "var(--peach)" }}>App</span>
@@ -102,11 +102,36 @@ export default function Page() {
                 RADET
               </span>
             </div>
+
+            {/* Copyright */}
             <p style={{
               fontSize: "0.72rem", color: "var(--text-dim)",
               fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 400,
+              marginBottom: "0.65rem",
             }}>
               © {new Date().getFullYear()} RADET. All rights reserved.
+            </p>
+
+            {/* Spoudazo promo */}
+            <p style={{
+              fontSize: "0.72rem", color: "var(--text-dim)",
+              fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 400,
+              lineHeight: 1.65,
+            }}>
+              🎉 Exciting news for students! Join the Spoudazo waitlist and get early access + bonus points:{" "}
+              <a
+                href="https://spoudazo.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "var(--peach)", fontWeight: 600,
+                  textDecoration: "none",
+                  borderBottom: "1px solid rgba(255,154,108,0.35)",
+                  paddingBottom: 1,
+                }}
+              >
+                Join Now →
+              </a>
             </p>
           </div>
 
