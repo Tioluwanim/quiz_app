@@ -161,7 +161,7 @@ export default function Page() {
                   fontSize: "0.88rem", color: "var(--peach)",
                   textShadow: "0 0 10px rgba(255,154,108,0.4)",
                 }}>
-                  Enoch
+                  ENOCH(VOTA)
                 </span>
               </div>
 
