@@ -11,12 +11,12 @@ export default function QuizScreen({ questions, onFinish }) {
   const [current,  setCurrent]  = useState(0);
   const [timeLeft, setTimeLeft] = useState(TIMER);
 
-  const q         = questions[current];
-  const answered  = answers[current] !== null;
-  const isTimedOut = answers[current] === -1;           // derived — always accurate
-  const isWarn    = timeLeft <= 5 && !answered;
+  const q          = questions[current];
+  const answered   = answers[current] !== null;
+  const isTimedOut = answers[current] === -1;
+  const isWarn     = timeLeft <= 5 && !answered;
 
-  // Reset timer whenever question changes
+  // Reset timer on question change
   useEffect(() => { setTimeLeft(TIMER); }, [current]);
 
   // Countdown
@@ -49,8 +49,8 @@ export default function QuizScreen({ questions, onFinish }) {
     return answers[i] === questions[i].answer ? "prog-dot prog-dot-correct" : "prog-dot prog-dot-wrong";
   }
 
-  const score    = answers.reduce((s, a, i) => a !== null && a !== -1 && a === questions[i].answer ? s + 1 : s, 0);
-  const timerPct = (timeLeft / TIMER) * 100;
+  const score     = answers.reduce((s, a, i) => a !== null && a !== -1 && a === questions[i].answer ? s + 1 : s, 0);
+  const timerPct  = (timeLeft / TIMER) * 100;
   const isCorrect = answered && !isTimedOut && answers[current] === q.answer;
 
   return (
@@ -64,7 +64,7 @@ export default function QuizScreen({ questions, onFinish }) {
         <span className="score-badge">SCORE <span>{score}</span></span>
       </div>
 
-      {/* Progress dots — clickable to jump to any question */}
+      {/* Progress dots */}
       <div style={{ display: "flex", gap: 4, flexWrap: "wrap", marginBottom: "1.25rem" }}>
         {questions.map((_, i) => (
           <button key={i} className={dotClass(i)} onClick={() => setCurrent(i)} title={`Q${i + 1}`} />
@@ -86,10 +86,20 @@ export default function QuizScreen({ questions, onFinish }) {
 
       {/* Question box */}
       <div style={{
-        background: "var(--surface2)", border: "1px solid var(--border)",
-        borderLeft: "3px solid var(--neon-cyan)",
-        borderRadius: 10, padding: "1.25rem 1.4rem", marginBottom: "1.25rem",
+        background: "var(--surface2)",
+        border: "1px solid var(--border)",
+        borderLeft: "3px solid var(--violet)",
+        borderRadius: "var(--radius-sm)",
+        padding: "1.25rem 1.4rem",
+        marginBottom: "1.25rem",
+        position: "relative", overflow: "hidden",
       }}>
+        {/* Subtle inner glow on the left accent */}
+        <div style={{
+          position: "absolute", left: 0, top: 0, bottom: 0, width: 60,
+          background: "linear-gradient(90deg, rgba(168,85,247,0.07), transparent)",
+          pointerEvents: "none",
+        }} />
         <p className="q-text" style={{ margin: 0 }}>{q.question}</p>
       </div>
 
@@ -103,7 +113,7 @@ export default function QuizScreen({ questions, onFinish }) {
         ))}
       </div>
 
-      {/* Explanation — shows after answer or time-out */}
+      {/* Explanation */}
       {answered && q.explanation && (
         <div className={`explain-box ${isCorrect ? "explain-correct" : "explain-wrong"}`}>
           <span style={{ fontSize: 18, flexShrink: 0 }}>
@@ -111,21 +121,26 @@ export default function QuizScreen({ questions, onFinish }) {
           </span>
           <div>
             <div style={{
-              fontFamily: "'Orbitron',sans-serif", fontSize: 11,
-              fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase",
-              color: isCorrect ? "var(--neon-green)" : "var(--neon-pink)",
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: 11, fontWeight: 700,
+              letterSpacing: "0.08em", textTransform: "uppercase",
+              color: isCorrect ? "var(--success)" : "var(--danger)",
               marginBottom: 4,
             }}>
               {isCorrect ? "Correct" : isTimedOut ? "Time's Up" : "Incorrect"}
             </div>
-            <p style={{ color: "var(--text-dim)", margin: 0, fontSize: 14, lineHeight: 1.6 }}>
+            <p style={{
+              color: "var(--text-dim)", margin: 0,
+              fontSize: 14, lineHeight: 1.65,
+              fontFamily: "'DM Sans', sans-serif",
+            }}>
               {q.explanation}
             </p>
           </div>
         </div>
       )}
 
-      {/* Prev / Next navigation */}
+      {/* Prev / Next */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
         <button
           className="btn-secondary"

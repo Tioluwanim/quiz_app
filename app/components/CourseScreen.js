@@ -22,12 +22,22 @@ export default function CourseScreen({ course, onSelectTopic, onBack }) {
 
       <div className="neon-divider" />
 
+      {/* Section label */}
       <div style={{
-        fontFamily: "'Orbitron',sans-serif", fontSize: "0.65rem",
-        color: "var(--text-dim)", letterSpacing: "0.12em",
+        fontFamily: "'DM Sans', sans-serif", fontSize: "0.65rem", fontWeight: 700,
+        color: "var(--text-faint)", letterSpacing: "0.14em",
         textTransform: "uppercase", marginBottom: "1rem",
+        display: "flex", alignItems: "center", gap: 10,
       }}>
-        — Select Topic —
+        <span style={{
+          display: "inline-block", width: 24, height: 1,
+          background: "linear-gradient(90deg, var(--violet), transparent)",
+        }} />
+        Select Topic
+        <span style={{
+          display: "inline-block", width: 24, height: 1,
+          background: "linear-gradient(90deg, transparent, var(--lavender))",
+        }} />
       </div>
 
       <div style={{ display: "flex", flexDirection: "column", gap: "0.65rem" }}>
@@ -44,12 +54,22 @@ export default function CourseScreen({ course, onSelectTopic, onBack }) {
             >
               <div style={{ flex: 1 }}>
                 <div style={{
-                  fontFamily: "'Orbitron',sans-serif", fontWeight: 600,
-                  fontSize: "0.82rem", color: "#fff",
-                  marginBottom: "0.4rem", letterSpacing: "0.03em",
-                  textTransform: "uppercase",
+                  fontFamily: "'DM Serif Display', serif",
+                  fontWeight: 400, fontSize: "0.95rem",
+                  color: "var(--text)", marginBottom: "0.4rem",
+                  letterSpacing: "-0.01em",
+                  display: "flex", alignItems: "center", gap: 8,
                 }}>
-                  {String(idx + 1).padStart(2, "0")}. {topic.title}
+                  <span style={{
+                    fontFamily: "'DM Sans', sans-serif",
+                    fontSize: "0.62rem", fontWeight: 700,
+                    color: "var(--violet)", opacity: 0.7,
+                    letterSpacing: "0.06em",
+                    minWidth: "1.6rem",
+                  }}>
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+                  {topic.title}
                 </div>
                 <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap", alignItems: "center" }}>
                   <span className={DIFF_CLASS[diffKey] ?? DIFF_CLASS.beginner}>{topic.difficulty ?? "Beginner"}</span>
@@ -57,7 +77,7 @@ export default function CourseScreen({ course, onSelectTopic, onBack }) {
                   <span className="pill">⏱ ~{mins} min</span>
                 </div>
               </div>
-              <span style={{ color: "var(--neon-cyan)", fontSize: "1.1rem", opacity: 0.6 }}>›</span>
+              <span style={{ color: "var(--violet)", fontSize: "1.1rem", opacity: 0.55 }}>›</span>
             </button>
           );
         })}

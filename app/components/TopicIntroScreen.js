@@ -24,37 +24,47 @@ export default function TopicIntroScreen({ topic, course, onStart, onBack }) {
         {/* Top glow */}
         <div style={{
           position: "absolute", top: -40, left: "50%", transform: "translateX(-50%)",
-          width: 200, height: 80,
-          background: "radial-gradient(ellipse, rgba(255,154,108,0.12), transparent 70%)",
+          width: 220, height: 90,
+          background: "radial-gradient(ellipse, rgba(168,85,247,0.14), transparent 70%)",
           pointerEvents: "none",
         }} />
 
-        <span className={DIFF_CLASS[diffKey] ?? DIFF_CLASS.beginner} style={{ display: "inline-block", marginBottom: "1.25rem" }}>
+        <span
+          className={DIFF_CLASS[diffKey] ?? DIFF_CLASS.beginner}
+          style={{ display: "inline-block", marginBottom: "1.25rem" }}
+        >
           {topic.difficulty ?? "Beginner"}
         </span>
 
         <div style={{
-          fontFamily: "'Orbitron',sans-serif",
-          fontSize: "clamp(1.3rem,3.5vw,1.8rem)",
-          fontWeight: 800, letterSpacing: "0.04em",
-          textTransform: "uppercase", color: "#fff",
+          fontFamily: "'DM Serif Display', serif",
+          fontSize: "clamp(1.4rem, 3.5vw, 1.9rem)",
+          fontWeight: 400,
+          color: "var(--text)",
           marginBottom: "0.75rem",
-          textShadow: "0 0 20px rgba(255,154,108,0.18)",
+          textShadow: "0 0 24px rgba(192,132,252,0.2)",
+          letterSpacing: "-0.01em",
+          lineHeight: 1.2,
         }}>
           {topic.title}
         </div>
 
-        <p style={{ color: "var(--text-dim)", fontSize: "0.9rem", lineHeight: 1.65, maxWidth: "38ch", margin: "0 auto 2.25rem" }}>
+        <p style={{
+          color: "var(--text-dim)", fontSize: "0.9rem",
+          lineHeight: 1.7, maxWidth: "40ch",
+          margin: "0 auto 2.25rem",
+          fontFamily: "'DM Sans', sans-serif",
+        }}>
           {topic.description}
         </p>
 
         {/* Stats */}
         <div style={{ display: "flex", justifyContent: "center", gap: "0.75rem", flexWrap: "wrap", marginBottom: "2.25rem" }}>
           {[
-            { value: quizCount,              label: "Questions"    },
-            { value: `~${mins}`,             label: "Minutes"      },
-            { value: "15s",                  label: "Per Q"        },
-            { value: topic.questions.length, label: "In Bank"      },
+            { value: quizCount,              label: "Questions" },
+            { value: `~${mins}`,             label: "Minutes"   },
+            { value: "15s",                  label: "Per Q"     },
+            { value: topic.questions.length, label: "In Bank"   },
           ].map(({ value, label }) => (
             <div key={label} className="stat-box">
               <div className="stat-value">{value}</div>
@@ -64,7 +74,11 @@ export default function TopicIntroScreen({ topic, course, onStart, onBack }) {
         </div>
 
         {topic.questions.length > 100 && (
-          <p style={{ fontSize: "0.75rem", color: "var(--text-dim)", marginBottom: "1.5rem", letterSpacing: "0.03em" }}>
+          <p style={{
+            fontSize: "0.75rem", color: "var(--text-dim)",
+            marginBottom: "1.5rem", letterSpacing: "0.03em",
+            fontFamily: "'DM Sans', sans-serif",
+          }}>
             ⚡ {quizCount} questions randomly selected from {topic.questions.length}-question bank each attempt
           </p>
         )}

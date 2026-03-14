@@ -28,32 +28,64 @@ export default function Page() {
   return (
     <div className="app-shell">
 
+      {/* ── Petal blur orbs ── */}
+      <div className="petal-orb petal-orb-1" />
+      <div className="petal-orb petal-orb-2" />
+
       {/* ── Navbar ── */}
       <nav style={{
         width: "100%", maxWidth: 780,
         display: "flex", alignItems: "center", justifyContent: "space-between",
         padding: "1.4rem 0 1.1rem",
-        borderBottom: "1px solid rgba(255,179,138,0.1)",
+        borderBottom: "1px solid var(--border)",
         position: "relative",
+        zIndex: 10,
       }}>
+        {/* Gradient accent line */}
         <div style={{
-          position: "absolute", bottom: -1, left: 0, width: 110, height: 1,
-          background: "linear-gradient(90deg, var(--peach), transparent)",
+          position: "absolute", bottom: -1, left: 0,
+          width: 120, height: 1,
+          background: "linear-gradient(90deg, var(--violet), transparent)",
         }} />
 
-        <div style={{ fontFamily: "'Playfair Display',serif", fontWeight: 800, fontSize: "1.2rem", letterSpacing: "-0.01em", color: "var(--text)" }}>
-          Quiz<span style={{ color: "var(--peach)", textShadow: "0 0 16px rgba(255,154,108,0.45)" }}>App</span>
+        {/* Logo */}
+        <div style={{
+          fontFamily: "'DM Serif Display', serif",
+          fontWeight: 400, fontSize: "1.25rem",
+          letterSpacing: "-0.01em", color: "var(--text)",
+        }}>
+          Quiz<span style={{
+            color: "var(--violet)",
+            textShadow: "0 0 20px rgba(192,132,252,0.5)",
+          }}>App</span>
         </div>
 
+        {/* Right controls */}
         <div style={{ display: "flex", alignItems: "center", gap: "0.85rem" }}>
+          {/* Live indicator */}
           <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-            <span style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--teal)", boxShadow: "0 0 7px var(--teal)", display: "inline-block" }} />
-            <span style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", fontSize: "0.65rem", fontWeight: 600, color: "var(--teal)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
+            <span style={{
+              width: 6, height: 6, borderRadius: "50%",
+              background: "var(--lavender)",
+              boxShadow: "0 0 8px var(--lavender)",
+              display: "inline-block",
+            }} />
+            <span style={{
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: "0.65rem", fontWeight: 700,
+              color: "var(--lavender)", letterSpacing: "0.08em",
+              textTransform: "uppercase",
+            }}>
               Live
             </span>
           </div>
+
           {screen !== "home" && (
-            <button className="btn-secondary" onClick={() => setScreen("home")} style={{ fontSize: "0.72rem", padding: "7px 14px" }}>
+            <button
+              className="btn-secondary"
+              onClick={() => setScreen("home")}
+              style={{ fontSize: "0.72rem", padding: "7px 14px" }}
+            >
               ⌂ Home
             </button>
           )}
@@ -61,22 +93,52 @@ export default function Page() {
       </nav>
 
       {/* ── Screens ── */}
-      {screen === "home"   && <HomeScreen courses={courses} onSelectCourse={c => { setActiveCourse(c); setScreen("course"); }} />}
-      {screen === "course" && activeCourse && <CourseScreen course={activeCourse} onSelectTopic={t => { setActiveTopic(t); setScreen("intro"); }} onBack={() => setScreen("home")} />}
-      {screen === "intro"  && activeTopic && activeCourse && <TopicIntroScreen topic={activeTopic} course={activeCourse} onStart={startQuiz} onBack={d => setScreen(d)} />}
-      {screen === "quiz"   && quizQuestions.length > 0 && <QuizScreen questions={quizQuestions} onFinish={handleFinish} />}
-      {screen === "result" && <ResultScreen questions={quizQuestions} answers={quizAnswers} topic={activeTopic} onRetry={handleRetry} onBackToTopics={() => setScreen("course")} onHome={() => setScreen("home")} />}
+      {screen === "home"   && (
+        <HomeScreen
+          courses={courses}
+          onSelectCourse={c => { setActiveCourse(c); setScreen("course"); }}
+        />
+      )}
+      {screen === "course" && activeCourse && (
+        <CourseScreen
+          course={activeCourse}
+          onSelectTopic={t => { setActiveTopic(t); setScreen("intro"); }}
+          onBack={() => setScreen("home")}
+        />
+      )}
+      {screen === "intro"  && activeTopic && activeCourse && (
+        <TopicIntroScreen
+          topic={activeTopic}
+          course={activeCourse}
+          onStart={startQuiz}
+          onBack={d => setScreen(d)}
+        />
+      )}
+      {screen === "quiz"   && quizQuestions.length > 0 && (
+        <QuizScreen questions={quizQuestions} onFinish={handleFinish} />
+      )}
+      {screen === "result" && (
+        <ResultScreen
+          questions={quizQuestions}
+          answers={quizAnswers}
+          topic={activeTopic}
+          onRetry={handleRetry}
+          onBackToTopics={() => setScreen("course")}
+          onHome={() => setScreen("home")}
+        />
+      )}
 
       {/* ── Footer ── */}
       <footer style={{
         width: "100%", maxWidth: 780,
         marginTop: "auto", paddingTop: "3rem",
+        position: "relative", zIndex: 10,
       }}>
-        {/* Peach-to-teal gradient divider */}
+        {/* Violet-to-lavender divider */}
         <div style={{
           height: 1, marginBottom: "1.5rem",
-          background: "linear-gradient(90deg, transparent, var(--peach), var(--teal), transparent)",
-          opacity: 0.2,
+          background: "linear-gradient(90deg, transparent, var(--violet), var(--lavender), transparent)",
+          opacity: 0.22,
         }} />
 
         <div style={{
@@ -86,17 +148,21 @@ export default function Page() {
         }}>
 
           {/* Left — brand + copyright + promo */}
-          <div style={{ maxWidth: 280 }}>
+          <div style={{ maxWidth: 290 }}>
             {/* Logo row */}
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: "0.35rem" }}>
-              <span style={{ fontFamily: "'Playfair Display',serif", fontWeight: 800, fontSize: "1rem", color: "var(--text)" }}>
-                Quiz<span style={{ color: "var(--peach)" }}>App</span>
+              <span style={{
+                fontFamily: "'DM Serif Display', serif",
+                fontWeight: 400, fontSize: "1rem", color: "var(--text)",
+              }}>
+                Quiz<span style={{ color: "var(--violet)" }}>App</span>
               </span>
               <span style={{
-                fontSize: "0.6rem", fontFamily: "'Plus Jakarta Sans',sans-serif",
+                fontSize: "0.6rem", fontFamily: "'DM Sans', sans-serif",
                 fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase",
-                color: "var(--teal)",
-                background: "rgba(92,232,208,0.08)", border: "1px solid rgba(92,232,208,0.22)",
+                color: "var(--lavender)",
+                background: "rgba(129,140,248,0.08)",
+                border: "1px solid rgba(129,140,248,0.22)",
                 borderRadius: 99, padding: "2px 9px",
               }}>
                 RADET
@@ -106,7 +172,7 @@ export default function Page() {
             {/* Copyright */}
             <p style={{
               fontSize: "0.72rem", color: "var(--text-dim)",
-              fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 400,
+              fontFamily: "'DM Sans', sans-serif", fontWeight: 400,
               marginBottom: "0.65rem",
             }}>
               © {new Date().getFullYear()} RADET. All rights reserved.
@@ -115,19 +181,21 @@ export default function Page() {
             {/* Spoudazo promo */}
             <p style={{
               fontSize: "0.72rem", color: "var(--text-dim)",
-              fontFamily: "'Plus Jakarta Sans',sans-serif", fontWeight: 400,
+              fontFamily: "'DM Sans', sans-serif", fontWeight: 400,
               lineHeight: 1.65,
             }}>
-              🎉 Exciting news for students! Join the Spoudazo waitlist and get early access + bonus points:{" "}
+              🎉 Exciting news for students! Join the Spoudazo waitlist and get
+              early access + bonus points:{" "}
               <a
                 href="https://spoudazo.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
-                  color: "var(--peach)", fontWeight: 600,
+                  color: "var(--violet)", fontWeight: 600,
                   textDecoration: "none",
-                  borderBottom: "1px solid rgba(255,154,108,0.35)",
+                  borderBottom: "1px solid rgba(192,132,252,0.35)",
                   paddingBottom: 1,
+                  transition: "color 0.2s",
                 }}
               >
                 Join Now →
@@ -139,51 +207,54 @@ export default function Page() {
           <div style={{ textAlign: "right" }}>
             <div style={{
               fontSize: "0.62rem", color: "var(--text-faint)",
-              fontFamily: "'Plus Jakarta Sans',sans-serif",
+              fontFamily: "'DM Sans', sans-serif",
               fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase",
               marginBottom: "0.55rem",
             }}>
               Built by
             </div>
 
-            <div style={{ display: "flex", flexDirection: "column", gap: "0.35rem", alignItems: "flex-end" }}>
-              {/* PM */}
+            <div style={{ display: "flex", flexDirection: "column", gap: "0.38rem", alignItems: "flex-end" }}>
+              {/* Project Manager */}
               <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <span style={{
                   fontSize: "0.62rem", color: "var(--text-faint)",
-                  fontFamily: "'Plus Jakarta Sans',sans-serif",
+                  fontFamily: "'DM Sans', sans-serif",
                   fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.07em",
                 }}>
                   Project Manager
                 </span>
                 <span style={{
-                  fontFamily: "'Playfair Display',serif", fontWeight: 700,
-                  fontSize: "0.88rem", color: "var(--peach)",
-                  textShadow: "0 0 10px rgba(255,154,108,0.4)",
+                  fontFamily: "'DM Serif Display', serif",
+                  fontWeight: 400, fontSize: "0.9rem",
+                  color: "var(--violet)",
+                  textShadow: "0 0 12px rgba(192,132,252,0.45)",
                 }}>
                   ENOCH(VOTA)
                 </span>
               </div>
 
-              {/* Dev */}
+              {/* Developer */}
               <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <span style={{
                   fontSize: "0.62rem", color: "var(--text-faint)",
-                  fontFamily: "'Plus Jakarta Sans',sans-serif",
+                  fontFamily: "'DM Sans', sans-serif",
                   fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.07em",
                 }}>
                   Developer
                 </span>
                 <span style={{
-                  fontFamily: "'Playfair Display',serif", fontWeight: 700,
-                  fontSize: "0.88rem", color: "var(--teal)",
-                  textShadow: "0 0 10px rgba(92,232,208,0.4)",
+                  fontFamily: "'DM Serif Display', serif",
+                  fontWeight: 400, fontSize: "0.9rem",
+                  color: "var(--lavender)",
+                  textShadow: "0 0 12px rgba(129,140,248,0.45)",
                 }}>
                   Tioluwanimi
                 </span>
               </div>
             </div>
           </div>
+
         </div>
       </footer>
 
